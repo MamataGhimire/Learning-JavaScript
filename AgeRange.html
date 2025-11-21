@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Range</title>
+</head>
+<body>
+Enter your age : <input type="text" name="age" id='val' placeholder=".....">
+  <br>
+  <button onclick ="gen()">sent</button>
+  <p id="call"></p>
+  <script>
+    gen();
+    function gen()
+    {
+      var a=parseInt(document.getElementById('val').value);
+      if(a>0 && a<13)
+        {
+          document.getElementById("call").innerHTML ="your are child";
+       
+        }
+       if(a>12 && a<20)
+        {
+          document.getElementById("call").innerHTML ="your are teenager";
+            
+        }      
+      if(a>19 && a<46)
+        {
+          document.getElementById("call").innerHTML ="your are adult";
+          
+        }
+      if(a>45 && a<101)
+        {
+          document.getElementById("call").innerHTML ="your are old";
+          
+        }
+    }
+  </script>
+</body>
+</html>
