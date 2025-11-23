@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>factorial</title>
+</head>
+<body>
+Enter your age : <input type="text" name="num" id='num1' placeholder=".....">
+  <br>
+  <button onclick ="fact()">sent</button>
+  <p id="call"></p>
+  <script>
+    fact();
+    function fact()
+    {
+      var b=document.getElementById('num1').value;
+      var a=parseInt(b);
+      var ans=1;
+    for(var i=a;i>=1;i--)
+      {
+        ans=ans*i;
+      }
+       document.getElementById("call").innerHTML ="factorial is : "+ans;
+    }
+  
+  </script>
+</body>
+</html>
