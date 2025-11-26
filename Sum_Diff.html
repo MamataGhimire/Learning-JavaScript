@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Bin</title>
+</head>
+<body>
+  Enter your num1 : <input type="text" id="call1" placeholder="....."><br>
+  Enter your num2 : <input type="text" id="call2" placeholder="....."><br>
+
+  <button onclick="sum()">Sum</button>
+  <button onclick="diff()">Difference</button>
+
+  <p id="call"></p>
+
+  <script>
+    function sum() {
+      var a = parseInt(document.getElementById('call1').value);
+      var b = parseInt(document.getElementById('call2').value);
+      var c = a + b;
+
+      document.getElementById("call").innerHTML ="sum is " + c;
+    }
+
+    function diff() {
+      var a = parseInt(document.getElementById('call1').value);
+      var b = parseInt(document.getElementById('call2').value);
+      var c = a - b;
+
+      document.getElementById("call").innerHTML =" Difference is " + c;
+    }
+  </script>
+</body>
+</html>
